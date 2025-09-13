@@ -234,17 +234,19 @@ img {
 .main-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-  padding: 10px;
+  padding: 2rem;
 }
 
 .main-project {
   grid-column: 1/3;
+  grid-row: 1/3;
 }
 
-.main-project h3 {
-    margin: 2rem 0 1rem 0;
+.main-content h3 {
     font-size: larger;
+    margin-bottom: 1rem;
 }
 
 .projects {
@@ -273,4 +275,16 @@ img {
   height: 100%;
   background-color: orange;
   border-radius: 4px 0 0 4px; /* rounded left corners if you like */
+}
+
+/* announcement */
+
+.announcements {
+    grid-row: span 1;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+
 }
