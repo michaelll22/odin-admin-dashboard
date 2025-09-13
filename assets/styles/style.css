@@ -18,8 +18,10 @@ a {
   text-decoration: none;
 }
 
-h1,h2,h3 {
-    font-size: inherit;
+h1,
+h2,
+h3 {
+  font-size: inherit;
 }
 
 /* style */
@@ -29,9 +31,14 @@ body {
   color: white;
 }
 
+img {
+  width: 40px;
+  height: auto;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 6fr;
 }
 
 .sidebar {
@@ -48,7 +55,7 @@ body {
 }
 
 .dashboard h1 {
-    font-size: larger;
+  font-size: larger;
 }
 
 .dashboard > img {
@@ -58,7 +65,7 @@ body {
 }
 
 .menu {
-    font-weight: 700;
+  font-weight: 700;
 
   margin-top: 1rem;
   padding: 1rem;
@@ -89,5 +96,131 @@ body {
 }
 
 .main-menu {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 2rem;
+}
+
+
+
+/* top-bar */
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* search bar */
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.search-bar img {
+  width: 35px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 50%;
+
+  padding: 0.5rem;
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
+
+  background-color: rgb(228, 228, 228);
+}
+
+/* profile */
+.user-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  color: black;
+}
+
+.user-nav img {
+  width: 30px;
+}
+
+.user-nav div {
+  flex: 1;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.user-nav p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* bottom bar */
+
+.bottom-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+
+  font-weight: 700;
+}
+
+.user-img {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 1.8rem;
+}
+
+.welcome-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.welcome-nav li > a {
+  background-color: #17a9fd;
+  color: white;
+  padding: 10px 20px;
+
+  border-radius: 20px;
 }
