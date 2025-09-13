@@ -234,7 +234,6 @@ img {
 .main-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   padding: 2rem;
 }
@@ -283,8 +282,42 @@ img {
     grid-row: span 1;
 }
 
-.card {
+.announcements .card {
     background-color: white;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+/* trending */
+
+.trending .card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending .profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.trending .user {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending p {
+    font-size: 1rem;
+}
+
+.trending p + p {
+    color: grey;
 }
